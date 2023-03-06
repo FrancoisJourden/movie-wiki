@@ -26,10 +26,8 @@ npm run build
 npm run lint
 ```
 
-### Don't forget your api_key !
-set it up as
-```app.config.globalProperties.api_key
-```
+### Don't forget your api key !
+set it up as ```app.config.globalProperties.api_key```
 under
 ```src/main.ts```
 
