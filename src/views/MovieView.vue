@@ -58,13 +58,13 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
+  <div v-if="movie != null">
     <img
         :src="'https://image.tmdb.org/t/p/original/' + movie.backdrop_path"
         alt=""
         class="w-1/2 sm:w-full mx-auto rounded hidden sm:inline"
     />
-    <div v-if="movie != null" class="flex flex-col flex-col-reverse sm:flex-row gap-2 m-2">
+    <div class="flex flex-col flex-col-reverse sm:flex-row gap-2 m-2">
       <div class="px-4 py-2 flex flex-col gap-2 rounded bg-gray-400 dark:bg-gray-600 sm:basis-3/4 lg:basis-4/5 2xl:basis-5/6">
         <p class="text-justify">{{ movie.overview }}</p>
         <div class="my-auto flex flex-col gap-2">
