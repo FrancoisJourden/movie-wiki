@@ -38,7 +38,4 @@ export default {
       @click="router.push('/movie/' + movie.id)"
     />
   </main>
-  <footer class="dark:bg-slate-700 p-2">
-    Copyright {{ new Date().getFullYear() }} @ François Jourden
-  </footer>
 </template>
